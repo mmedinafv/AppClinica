@@ -1,0 +1,24 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.PacientePage"
+             Title="Registro de Paciente">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="10">
+
+            <Entry Placeholder="Nombre" Text="{Binding Nombre}"/>
+            <Entry Placeholder="Apellido" Text="{Binding Apellido}"/>
+            <Entry Placeholder="Lugar" Text="{Binding Lugar}"/>
+            <Entry Placeholder="Presión arterial (ej: 120/80)" Text="{Binding PresionArterial}"/>
+            <Entry Placeholder="Temperatura (°C)" Keyboard="Numeric" Text="{Binding Temperatura}" />
+            <Entry Placeholder="Altura (m)" Keyboard="Numeric" Text="{Binding Altura}" />
+            <Entry Placeholder="Peso (lb)" Keyboard="Numeric" Text="{Binding Peso}" />
+            <Entry Placeholder="Edad" Keyboard="Numeric" Text="{Binding Edad}" />
+            <Entry Placeholder="Respiración (por min)" Keyboard="Numeric" Text="{Binding RespiracionesPorMinuto}" />
+            <Entry Placeholder="Oxígeno en sangre (%)" Keyboard="Numeric" Text="{Binding OxigenoSangre}" />
+            <Entry Placeholder="Palpitaciones por min" Keyboard="Numeric" Text="{Binding PalpitacionesPorMinuto}" />
+
+            <Button Text="Guardar" Command="{Binding GuardarCommand}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
